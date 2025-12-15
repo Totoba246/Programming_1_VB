@@ -3,14 +3,18 @@
 int main()
 {
     float milliseconds = 0.0F;
+    int millToSec = 1000;
+    int secToMin = 60;
+    int minToHo = 60;
+    int hoToDa = 24;
 
     printf("Please enter a millisecond value: ");
     scanf("%f", &milliseconds);
 
-    float seconds = milliseconds/1000;
-    float minutes = seconds/60;
-    float hours = minutes/60;
-    float days = hours/24;
+    float seconds = milliseconds/millToSec;
+    float minutes = seconds/secToMin;
+    float hours = minutes/minToHo;
+    float days = hours/hoToDa;
 
     printf("seconds: %f\n", seconds);
     printf("minutes: %f\n", minutes);
