@@ -3,7 +3,8 @@
 int main()
 {
 
-      enum lanes{
+    typedef enum lanes
+    {
         LEFT,
         RIGHT,
         CENTER,
@@ -19,7 +20,10 @@ int main()
 
     printf("Lane (1-Left, 2-Center, 3-Right): ");
     scanf("%d", &lane);
-    switch (lane){
+
+    //lane zuordnen
+    switch (lane)
+    {
         case  1:{
             lane =  LEFT;
             break;
@@ -33,18 +37,21 @@ int main()
             break;
         }
         default:{
+            lane = UNKNOWN;
             printf("No Lane found");
             break;
         }
     }
-    
 
     printf("\n");
     printf("\n");
     printf("\t \t \t \tL\t \t \t \tC\t \t  \t \tR\n");
     printf("\t \t | \t \t \t \t | \t \t \t \t| \t \t  \t \t |\n");
 
-  switch(lane){
+
+    //je nach lane Grafik erstellen
+  switch(lane)
+  {
     case LEFT:{
         printf("\t \t | \t \tX\t \t | \t \t \t \t| \t \t \t \t |\n");
         break;

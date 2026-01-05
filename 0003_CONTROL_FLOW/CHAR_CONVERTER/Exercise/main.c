@@ -46,3 +46,4 @@ int main()
         printf("\n The Lowercase version of %c is %c", character, charUP);
     }
 }
+//muss noch vorgestellt werden
