@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+#include <stddef.h>
 
 bool allOf(int32_t *array, size_t length, int32_t value);
 
