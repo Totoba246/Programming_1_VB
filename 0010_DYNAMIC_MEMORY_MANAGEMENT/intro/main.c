@@ -29,5 +29,6 @@ int main()
     //inf. Time to run -> Dangling Pointer, also
     heapArray = NULL; //alternativ (void*)0
 
+
     return 0;
 }
